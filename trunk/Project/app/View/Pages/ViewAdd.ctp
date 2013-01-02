@@ -1,18 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd"> 
 
 <html>
 
 	<head>
 		<title>Cadastro de Empresa</title>
-		<meta charset="utf-8" />
-		<meta name="author" content="Allan do Amaral">
+        <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="../../webroot/css/style.css">
 	</head>
 	
 	<body>
-		<!-- TÍTULO -->
-                <h1>Cadastro de Empresa</h1>
+        <!-- NAVEGAÃ‡ÃƒO PRINCIPAL -->
+        <ul id="Menu_Home">
+        <a href="index.ctp"><img src="../../webroot/img/button-home.png" alt="Home" id="button-home"></a>
+        </ul>
 
-		<!-- INICIO FORMULÁRIO -->
+		<!-- TÃTULO -->
+                <h1>Cadastrar Empresa</h1>
+
+		<!-- INICIO FORMULÃRIO -->
 		<form method="post" action="" autocomplete="off" name="formularioEmpresa">
 
                 <!-- CAMPOS DE PREENCHIMENTO -->
@@ -21,31 +26,32 @@
                     <!-- INICIO DADOS DE EMPRESA -->
                     <div style="width:50%; float:left;" align="center">
                         <fieldset>
-                            <legend align="center"><h2>Dados da Empresa</h2></legend>
+                            <legend>Dados da Empresa</legend>
 
                             <div>
-                                <!-- ÁREA NOME -->
+                                <!-- ÃREA NOME -->
                                 <div>
                                     <label for="nome"><b>Nome</b></label>
                                     <input required type="text" id="nome"/>
                                 </div>
 
-                                <!-- ÁREA CNPJ -->
+                                <!-- ÃREA CNPJ -->
                                 <div>
                                     <label for="cnpj"><b>CNPJ</b></label>
                                     <input required pattern="[0-9]{2}[.][0-9]{3}[.][0-9]{3}[/][0-9]{4}[-]{1}[0-9]{2}" type="text" id="cnpj" placeholder="Ex: 12.345.678 ou 1234-56" 
                                     maxlength="10"/>
                                 </div>
 
-                                <!-- ÁREA SIGLA -->
+                                <!-- ÃREA SIGLA -->
                                 <div>
                                     <label for="sigla"><b>Sigla</b></label>
                                     <input required type="text" id="sigla"/>
                                 </div>
 
-                                <!-- ÁREA ENDEREÇO -->
+                                <!-- ÃREA ENDEREÃ‡O -->
+                                <p>
                                 <div>
-                                    <b>Endereço:</b></br>
+                                    <b>EndereÃ§o:</b><br>
                                     <label for="cep">CEP</label>
                                     <input required pattern="[0-9]{5}[-][0-9]{3}" type="text" id="cep" placeholder="Ex: 12345-678" />
                                 </div>
@@ -67,7 +73,7 @@
                                 </div>
 
                                 <div>
-                                    <label for="numero">Número</label>
+                                    <label for="numero">NÃºmero</label>
                                     <input required type="text" id="numero" pattern="[0-9]{1,10}"/>
                                 </div>
 
@@ -108,10 +114,11 @@
                                         <option value="SE">SE</option>
                                         <option value="TO">TO</option>
                                     </select>
+                                </p>
                                 </div>
 
 
-                                <!-- ÁREA TELEFONES -->
+                                <!-- ÃREA TELEFONES -->
                                 <div>
                                     <div>
                                         <label for="telefone"><b>Telefone</b></label>
@@ -128,24 +135,24 @@
                     </div>
                     <!-- FIM DADOS EMPRESA -->
 
-                    <!-- INÍCIO DADOS DO SPONSOR -->
-                    <div align="center"  style="width:25%; float:left;">
+                    <!-- INÃCIO DADOS DO SPONSOR -->
+                    <div align="center">
                         <fieldset>
-                            <legend align="center"><h2>Dados do Sponsor</h2></legend>
+                            <legend>Dados do Sponsor</legend>
 
-                            <!-- ÁREA NOME SPONSOR -->
+                            <!-- ÃREA NOME SPONSOR -->
                             <div>
                                 <label for="nomeSponsor"><b>Nome</b></label>
                                 <input required type="text" id="nomeSponsor" pattern="(.{1,50})"/>
                             </div>
                             
-                            <!-- ÁREA EMAIL SPONSOR -->
+                            <!-- ÃREA EMAIL SPONSOR -->
                             <div>
                                 <label for="emailSponsor"><b>Email</b></label>
                                 <input required type="email" id="emailSponsor" placeholder="exemplo@email.com" />
                             </div>
 
-                            <!-- ÁREA TELEFONE SPONSOR -->
+                            <!-- ÃREA TELEFONE SPONSOR -->
                             <div>
                                 <label for="telefoneSponsor"><b>Telefone</b></label>
                                 <input required pattern="[(][0-9]{2}[)][0-9]{4}[-][0-9]{4}" type="text" id="telefoneSponsor"  placeholder="Ex: (12)3456-7891"/>
@@ -157,21 +164,21 @@
                     <!-- INICIO DADOS FINANCEIROS -->
                     <div align="center">
                         <fieldset>
-                            <legend align="center"><h2>Dados do Financeiro</h2></legend>
+                            <legend>Dados do Financeiro</legend>
 
-                            <!-- ÁREA NOME FINANCEIRO -->
+                            <!-- ÃREA NOME FINANCEIRO -->
                             <div>
                                 <label for="nomeFinanceiro"><b>Nome</b></label>
                                 <input required type="text" id="nomeFinanceiro" pattern="(.{1,50})"/>
                             </div>
 
-                            <!-- ÁREA EMAIL FINANCEIRO -->
+                            <!-- ÃREA EMAIL FINANCEIRO -->
                             <div>
                                 <label for="emailFinanceiro"><b>Email</b></label>
                                 <input required type="email" id="emailFinanceiro" placeholder="exemplo@email.com" />
                             </div>
 
-                            <!-- ÁREA TELEFONE FINANCEIRO -->
+                            <!-- ÃREA TELEFONE FINANCEIRO -->
                             <div>
                                 <label for="telefoneFinanceiro"><b>Telefone</b></label>
                                 <input required pattern="[(][0-9]{2}[)][0-9]{4}[-][0-9]{4}" type="text" id="telefoneFinanceiro"  placeholder="Ex: (12)3456-7891"/>
@@ -183,21 +190,21 @@
                     <!-- INICIO DADOS SEPG -->
                     <div align="center">
                         <fieldset>
-                            <legend align="center"><h2>Líder SEPG</h2></legend>
+                            <legend>LÃ­der SEPG</legend>
                             
-                            <!-- ÁREA NOME SEPG -->
+                            <!-- ÃREA NOME SEPG -->
                             <div>
                                 <label for="nomeSepg"><b>Nome</b></label>
                                 <input required type="text" id="nomeSepg" pattern="(.{1,50})"/>
                             </div>
                             
-                            <!-- ÁREA EMAIL SEPG -->
+                            <!-- ÃREA EMAIL SEPG -->
                             <div>
                                 <label for="emailSepg"><b>Email</b></label>
                                 <input required type="email" id="emailSepg" placeholder="exemplo@email.com" />
                             </div>
 
-                            <!-- ÁREA TELEFONE SEPG -->
+                            <!-- ÃREA TELEFONE SEPG -->
                             <div>
                                 <label for="telefoneSepg"><b>Telefone</b></label>
                                 <input required pattern="[(][0-9]{2}[)][0-9]{4}[-][0-9]{4}" type="text" id="telefoneSepg" 
@@ -210,13 +217,15 @@
                 </div>
             
 
-            <!-- BOTÕES -->
-            <br>
+            <!-- BOTÃ•ES -->
+            
+            <fieldset>
             <div align="center"> 
-                <input type="button" value="Voltar"/>
-                <input type="reset" value="Limpar"/>
-                <input type="submit" value="Salvar"/>   
+                <input type="button" src="index.html" class="button" value="Voltar"/>
+                <input type="reset" class="button" value="Limpar"/>
+                <input type="submit" class="button" value="Salvar"/>   
             </div>
+            </fieldset>
 
         </form>
 	</body>
