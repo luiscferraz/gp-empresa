@@ -26,11 +26,14 @@ class CompaniesController extends AppController {
 		}
 		
 	}
-	public function edit($id){
+	public function edit($id = NULL){
 		
+		$this->Company->id = $id;
+
 		$this->layout = 'EditCompany';
 		
-	    if ($this->request->is('post')) {
+	    if ($this->request->is('get')) {
+	        $this->request->data = $this->Company->read();
 	        
 	        if ($this->Company->save($this->request->data)) {
 	            
@@ -38,17 +41,16 @@ class CompaniesController extends AppController {
 	            $this->redirect('/Companies');
 	        }
 	    }
-	    
-	    $this->set('company', $this->Company->findById($id));
-	
-			
+	    $this->set('company', $this->Company->findById($id));	
 	}
+
+	
 	
 	public function delete($id){
 		
 		$this->layout = 'DeleteCompany';
 		
-		this->set(array('removed' => 1));
+		$this->set(array('removed' => 1));
 		
 	}
 	
