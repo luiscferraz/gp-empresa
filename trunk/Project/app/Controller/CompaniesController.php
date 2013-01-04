@@ -22,8 +22,33 @@ class CompaniesController extends AppController {
 			}
 		}
 		else{			
-			$this->Session->setFlash('Empresa não cadastrada. Tente novamente!');			
+			$this->Session->setFlash('A empresa não foi cadastrada. Tente novamente!');			
 		}
+		
+	}
+	public function edit($id){
+		
+		$this->layout = 'EditCompany';
+		
+	    if ($this->request->is('post')) {
+	        
+	        if ($this->Company->save($this->request->data)) {
+	            
+	            $this->Session->setFlash('Empresa Atualizada!');
+	            $this->redirect('/Companies');
+	        }
+	    }
+	    
+	    $this->set('company', $this->Company->findById($id));
+	
+			
+	}
+	
+	public function delete($id){
+		
+		$this->layout = 'DeleteCompany';
+		
+		this->set(array('removed' => 1));
 		
 	}
 	
