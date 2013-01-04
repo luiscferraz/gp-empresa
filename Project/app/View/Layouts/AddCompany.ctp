@@ -1,3 +1,7 @@
+<?php
+    echo $this->Html->script('buscacep');
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 <head>
