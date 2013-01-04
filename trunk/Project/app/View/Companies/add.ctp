@@ -1,3 +1,5 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
 <div class="companies form">
 	<?php echo $this->Form->create('Company', array('action' => 'add')); ?>
 	
@@ -17,13 +19,15 @@
 		<fieldset id="dadosEndereço">
 			<legend>Endereço</legend>
 			<?php
-				echo $this->Form->input('Address.address', array('label' => 'Endereço:'));
+				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code'));
+                echo '<input type="button" style="width:130;height:30" value="Buscar Endereço" onclick="getEndereco()"/>';			
+				echo $this->Form->input('Address.address', array('label' => 'Endereço:', 'id' => 'address'));
 				echo $this->Form->input('Address.number', array('label' => 'Número:'));
-				echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:'));
-				echo $this->Form->input('Address.city', array('label' => 'Cidade:'));
-				echo $this->Form->input('Address.state', array('label' => 'Estado:'));
+				echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:', 'id' => 'neighborhood'));
+				echo $this->Form->input('Address.city', array('label' => 'Cidade:', 'id' => 'city'));
+				echo $this->Form->input('Address.state', array('label' => 'Estado:', 'id' => 'state'));
 				echo $this->Form->input('Address.complement', array('label' => 'Complemento:'));
-				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:'));
+				
 			?>
 		</fieldset>
 	</div>
