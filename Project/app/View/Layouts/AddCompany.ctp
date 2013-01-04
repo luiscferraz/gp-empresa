@@ -7,6 +7,8 @@
 	
 </head>
 <body>
+	<a href="index" id="botao_home"><?php echo $this->Html->image('button-home.png')?></a>
+
 	<h1>Cadastrar Empresa</h1>
 
 	<?php echo $this->fetch('content'); ?>
