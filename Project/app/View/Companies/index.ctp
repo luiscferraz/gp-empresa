@@ -1,6 +1,4 @@
 <div class="company index">
-	
-	<h2>Empresas</h2>
 
 	<table cellpadding="0" cellspacing="0">
 		<tr>
@@ -32,10 +30,10 @@
 
 			<div class="actions">
 				<td>
+					<?php echo $this->Html->link('Ver', array('action' => 'view', $company['Company']['id']), array('escape'=>false, 'id'=>'link'))?>
 					<?php echo $this->Html->link('Editar', array('action' => 'edit', $company['Company']['id']),
-					array('escape'=>false))?></td>
-				<td>
-					<?php echo $this->Html->link('Deletar', array('action' => 'delete', $company['Company']['id']), array('escape'=>false), "Confirmar Exclusão de Empresa?")?></td>
+					array('escape'=>false, 'id'=>'link'))?>
+					<?php echo $this->Html->link('Deletar', array('action' => 'delete', $company['Company']['id']), array('escape'=>false, 'id'=>'link'), "Confirmar Exclusão de Empresa?")?></td>
 			</div>
 		</tr>
 		<?php } ?>
