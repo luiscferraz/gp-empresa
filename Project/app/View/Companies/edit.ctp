@@ -55,6 +55,9 @@
             ?>
         </fieldset>
     
-        <?php echo $this->Form->end('ATUALIZAR'); ?>
+        <?php 
+        echo $this->Form->end('ATUALIZAR'); 
+        echo $this->Form->button('RESTAURAR', array('type'=>'reset', 'id'=>'botao_restaurar'));
+        ?>
     </div>
 </div>

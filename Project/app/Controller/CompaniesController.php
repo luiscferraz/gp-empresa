@@ -7,6 +7,7 @@ class CompaniesController extends AppController {
 	public $name = 'Companies';
 	
 	public function index(){
+		$this -> layout = 'Index';
 		$this->set('companies', $this->Company->find('all'));		
 	}
 	
@@ -34,13 +35,13 @@ class CompaniesController extends AppController {
 		
 	    if ($this->request->is('get')) {
 	        $this->request->data = $this->Company->read();
-	        
-	        if ($this->Company->save($this->request->data)) {
-	            
-	            $this->Session->setFlash('Empresa Atualizada!');
-	            $this->redirect('/Companies');
-	        }
+	    } else {
+			if ($this->Consultant->save($this->request->data)) {
+				$this->Session->setFlash('Empresa Atualizada!');
+				$this->redirect('/Companies');
+			} 
 	    }
+
 	    $this->set('company', $this->Company->findById($id));	
 	}
 
