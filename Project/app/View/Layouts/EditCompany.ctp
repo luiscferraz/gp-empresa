@@ -7,7 +7,7 @@
 	
 </head>
 <body>
-	<a href="index" id="botao_home"><?php echo $this->Html->image('button-home.png')?></a>
+	<a href="/Companies" id="botao_home"><?php echo $this->Html->image('button-home.png')?></a>
 
 	<h1>Editar Empresa</h1>
 
