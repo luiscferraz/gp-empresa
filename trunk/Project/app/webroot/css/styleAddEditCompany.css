@@ -56,11 +56,20 @@ div.right {
 }
 
 .submit input{
+	float: left;
 	clear:both;
-	width: 40%;
+	margin-left: 13%;
+	margin-right: 5%;
+	width: 30%;
 	height: 40px;
-	margin-left: 25%;
-	margin-right: 25%;
+	font:normal 20px/1.1em arial;
+}
+
+#botao_restaurar {
+	clear:both;
+	width: 30%;
+	height: 40px;
+	margin-left: 5%;
 	font:normal 20px/1.1em arial;
 }
 
@@ -72,4 +81,9 @@ div.right {
 	display: block;
 	padding: 10px 10px 10px 20px;
 	border-radius: 0px 22px 22px 0px ;
+}
+
+#botao_buscaCEP {
+	width: 130;
+	height: 30;
 }
