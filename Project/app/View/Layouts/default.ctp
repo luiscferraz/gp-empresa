@@ -1,4 +1,17 @@
 <?php
+  echo $this->Html->script('jquery-1.7');
+?>
+
+<?php
+    echo $this->Html->script('jquery.maskedinput-1.3');
+?>
+
+<?php
+    echo $this->Html->script('buscacep');
+?>
+
+
+<?php
 /**
  *
  * PHP 5
@@ -57,5 +70,6 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+	<?php echo $this->Js->writeBuffer(); // note: write cached scripts ?>
 </body>
 </html>
