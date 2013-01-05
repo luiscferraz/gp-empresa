@@ -55,6 +55,17 @@ class CompaniesController extends AppController {
 		
 	}
 	
+
+	public function view($id){
+
+		$this->Company->id = $id;
+		$this->layout = 'ViewCompany';
+		
+	    if ($this->request->is('get')) {
+	        $this->set('company', $this->Company->read());
+	    }
+	}
+
 }
 
 
