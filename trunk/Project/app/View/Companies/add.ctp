@@ -70,6 +70,10 @@
 			?>
 		</fieldset>
 	
-		<?php echo $this->Form->end('ENVIAR'); ?>
+		<?php 
+		echo $this->Form->end('ENVIAR');
+		echo $this->Form->button('LIMPAR', array('type'=>'reset', 'id'=>'botaoRestaurar')); 
+		?>
+		
 	</div>
 </div>

@@ -1,3 +1,18 @@
+.submit input{
+	float: left;
+	margin-left: 13%;
+	margin-right: 5%;
+	width: 30%;
+	height: 40px;
+	font:normal 20px/1.1em arial;
+}
+
+#botaoRestaurar {
+	width: 30%;
+	height: 40px;
+	margin-left: 5%;
+	font:normal 20px/1.1em arial;
+}
 
 body{
 	top: auto;
@@ -55,25 +70,7 @@ div.right {
 	width: 45%;
 }
 
-.submit input{
-	float: left;
-	clear:both;
-	margin-left: 13%;
-	margin-right: 5%;
-	width: 30%;
-	height: 40px;
-	font:normal 20px/1.1em arial;
-}
-
-#botao_restaurar {
-	clear:both;
-	width: 30%;
-	height: 40px;
-	margin-left: 5%;
-	font:normal 20px/1.1em arial;
-}
-
-#botao_home {
+#botaoHome {
 	margin-left: -10px;
 	margin-top: 80px;
 	position: absolute;

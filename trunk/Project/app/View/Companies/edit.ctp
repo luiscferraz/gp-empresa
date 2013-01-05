@@ -57,7 +57,7 @@
     
         <?php 
         echo $this->Form->end('ATUALIZAR'); 
-        echo $this->Form->button('RESTAURAR', array('type'=>'reset', 'id'=>'botao_restaurar'));
+        echo $this->Form->button('RESTAURAR', array('type'=>'reset', 'id'=>'botaoRestaurar'));
         ?>
     </div>
 </div>
