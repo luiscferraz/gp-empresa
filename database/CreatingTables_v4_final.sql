@@ -18,8 +18,8 @@ CREATE  TABLE IF NOT EXISTS `swsdb`.`consultants` (
   `name` VARCHAR(45) NOT NULL ,
   `acronym` VARCHAR(2) NOT NULL ,
   `acronym_color` VARCHAR(7) NOT NULL ,
-  `phone1` VARCHAR(12) NOT NULL ,
-  `phone2` VARCHAR(12) NULL ,
+  `phone1` VARCHAR(13) NOT NULL ,
+  `phone2` VARCHAR(13) NULL ,
   `email` VARCHAR(45) NOT NULL ,
   `removed` TINYINT(1) NOT NULL ,
   UNIQUE INDEX `acronym_color_UNIQUE` (`acronym_color` ASC) ,
@@ -40,8 +40,8 @@ CREATE  TABLE IF NOT EXISTS `swsdb`.`companies` (
   `cnpj` VARCHAR(18) NOT NULL ,
   `name` VARCHAR(45) NOT NULL ,
   `acronym` VARCHAR(45) NOT NULL ,
-  `phone1` VARCHAR(12) NOT NULL ,
-  `phone2` VARCHAR(12) NULL ,
+  `phone1` VARCHAR(13) NOT NULL ,
+  `phone2` VARCHAR(13) NULL ,
   `removed` TINYINT(1) NOT NULL ,
   UNIQUE INDEX `cnpj_UNIQUE` (`cnpj` ASC) ,
   PRIMARY KEY (`id`)) 
@@ -78,7 +78,7 @@ DROP TABLE IF EXISTS `swsdb`.`sepgs` ;
 CREATE  TABLE IF NOT EXISTS `swsdb`.`sepgs` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
-  `phone` VARCHAR(12) NULL ,
+  `phone` VARCHAR(13) NULL ,
   `email` VARCHAR(45) NULL ,
   `company_id` INT NULL ,
     INDEX `fk_sepgs_companies` (`company_id` ASC) ,
@@ -101,7 +101,7 @@ DROP TABLE IF EXISTS `swsdb`.`financials` ;
 CREATE  TABLE IF NOT EXISTS `swsdb`.`financials` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
-  `phone` VARCHAR(12) NULL ,
+  `phone` VARCHAR(13) NULL ,
   `email` VARCHAR(45) NULL ,
   `company_id` INT NULL ,
     INDEX `fk_financials_companies` (`company_id` ASC) ,
@@ -123,7 +123,7 @@ DROP TABLE IF EXISTS `swsdb`.`Sponsors` ;
 CREATE  TABLE IF NOT EXISTS `swsdb`.`sponsors` (
   `id` INT NOT NULL AUTO_INCREMENT ,
   `name` VARCHAR(45) NOT NULL ,
-  `phone` VARCHAR(12) NULL ,
+  `phone` VARCHAR(13) NULL ,
   `email` VARCHAR(45) NULL ,
   `company_id` INT NULL ,
     INDEX `fk_sponsors_companies` (`company_id` ASC) ,
