@@ -1,4 +1,12 @@
 <?php
+  echo $this->Html->script('jquery-1.7');
+?>
+
+<?php
+    echo $this->Html->script('jquery.maskedinput-1.3');
+?>
+
+<?php
     echo $this->Html->script('buscacep');
 ?>
 
@@ -16,5 +24,6 @@
 	<h1>Cadastrar Empresa</h1>
 
 	<?php echo $this->fetch('content'); ?>
+	<?php echo $this->Js->writeBuffer(); // note: write cached scripts ?>
 </body>
 </html>
