@@ -36,7 +36,7 @@ class CompaniesController extends AppController {
 	    if ($this->request->is('get')) {
 	        $this->request->data = $this->Company->read();
 	    } else {
-			if ($this->Consultant->save($this->request->data)) {
+			if ($this->Company->save($this->request->data)) {
 				$this->Session->setFlash('Empresa Atualizada!');
 				$this->redirect('/Companies');
 			} 
@@ -48,9 +48,7 @@ class CompaniesController extends AppController {
 	
 	
 	public function delete($id){
-		
-		$this->layout = 'DeleteCompany';
-		
+
 		$this->set(array('removed' => 1));
 		
 	}
