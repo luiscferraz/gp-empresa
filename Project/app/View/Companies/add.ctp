@@ -7,6 +7,9 @@
         $("#cnpj").mask("99.999.999/9999-99");
 		$("#phone1").mask("(99)9999-9999");
 		$("#phone2").mask("(99)9999-9999");
+		$("#phone_financial").mask("(99)9999-9999");
+		$("#phone_sponsor").mask("(99)9999-9999");
+		$("#phone_sepg").mask("(99)9999-9999");
 		$("#zip_code").mask("99999-999");
     });
 </script>
@@ -47,7 +50,7 @@
 			<legend>Dados do Sponsor</legend>
 			<?php
 				echo $this->Form->input('Sponsor.name', array('label' => 'Nome:'));
-				echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:'));
+				echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:', 'id' => 'phone_sponsor'));
 				echo $this->Form->input('Sponsor.email', array('label' => 'Email:'));
 			?>
 		</fieldset>
@@ -56,7 +59,7 @@
 			<legend>Dados Financeiros</legend>
 			<?php
 				echo $this->Form->input('Financial.name', array('label' => 'Nome:'));
-				echo $this->Form->input('Financial.phone', array('label' => 'Telefone:'));
+				echo $this->Form->input('Financial.phone', array('label' => 'Telefone:', 'id' => 'phone_financial'));
 				echo $this->Form->input('Financial.email', array('label' => 'Email:'));
 			?>
 		</fieldset>
@@ -65,7 +68,7 @@
 			<legend>Dados SEPG</legend>
 			<?php
 				echo $this->Form->input('Sepg.name', array('label' => 'Nome:'));
-				echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:'));
+				echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:', 'id' => 'phone_sepg'));
 				echo $this->Form->input('Sepg.email', array('label' => 'Email:'));
 			?>
 		</fieldset>

@@ -1,3 +1,11 @@
+<?php
+  echo $this->Html->script('jquery-1.7');
+?>
+
+<?php
+    echo $this->Html->script('jquery.maskedinput-1.3');
+?>
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
 <head>
@@ -12,5 +20,6 @@
 	<h1>Editar Empresa</h1>
 
 	<?php echo $this->fetch('content'); ?>
+	<?php echo $this->Js->writeBuffer(); // note: write cached scripts ?>
 </body>
 </html>

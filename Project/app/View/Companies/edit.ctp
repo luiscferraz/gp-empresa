@@ -1,3 +1,18 @@
+<script src="jquery.js" type="text/javascript"></script>
+<script src="jquery.maskedinput.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    jQuery(document).ready(function($){        
+        $('#cnpj').focus();
+        $("#cnpj2").mask("99.999.999/9999-99");
+		$("#phone1").mask("(99)9999-9999");
+		$("#phone2").mask("(99)9999-9999");
+		$("#phone_financial").mask("(99)9999-9999");
+		$("#phone_sponsor").mask("(99)9999-9999");
+		$("#phone_sepg").mask("(99)9999-9999");		
+		$("#zip_code").mask("99999-999");
+    });
+</script>
 <div class="companies form">
     <?php echo $this->Form->create('Company', array('action' => 'edit')); ?>
 
@@ -7,9 +22,9 @@
             <?php
                 echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
                 echo $this->Form->input('acronym', array('label' => 'Sigla:'));
-                echo $this->Form->input('cnpj', array('label' => 'CNPJ:'));
-                echo $this->Form->input('phone1', array('label' => 'Telefone:'));
-                echo $this->Form->input('phone2', array('label' => 'Telefone 2 (opcional):'));
+                echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj2'));
+                echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1'));
+                echo $this->Form->input('phone2', array('label' => 'Telefone 2 (opcional):', 'id' => 'phone2'));
             ?>
         </fieldset>
         
@@ -32,7 +47,7 @@
             <legend>Dados do Sponsor</legend>
             <?php
                 echo $this->Form->input('Sponsor.name', array('label' => 'Nome:'));
-                echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:'));
+                echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:', 'id' => 'phone_sponsor'));
                 echo $this->Form->input('Sponsor.email', array('label' => 'Email:'));
             ?>
         </fieldset>
@@ -41,7 +56,7 @@
             <legend>Dados Financeiros</legend>
             <?php
                 echo $this->Form->input('Financial.name', array('label' => 'Nome:'));
-                echo $this->Form->input('Financial.phone', array('label' => 'Telefone:'));
+                echo $this->Form->input('Financial.phone', array('label' => 'Telefone:', 'id' => 'phone_financial'));
                 echo $this->Form->input('Financial.email', array('label' => 'Email:'));
             ?>
         </fieldset>
@@ -50,7 +65,7 @@
             <legend>Dados SEPG</legend>
             <?php
                 echo $this->Form->input('Sepg.name', array('label' => 'Nome:'));
-                echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:'));
+                echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:', 'id' => 'phone_sepg'));
                 echo $this->Form->input('Sepg.email', array('label' => 'Email:'));
             ?>
         </fieldset>
