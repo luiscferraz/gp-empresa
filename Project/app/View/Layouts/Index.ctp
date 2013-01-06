@@ -12,19 +12,18 @@
 
     <body>
         
-        <?php echo $this->Html->link("Cadastrar", array('action' => 'add'),array('class'=>'botaoCadastrar', 'id' => 'botaoCadastrar')); ?>
+        <?php echo $this->Html->link("Cadastrar", array('action' => 'add'),array('id' => 'botaoCadastrar')); ?>
 
-		<div id="Menu_Home">
-			<a href="#" id="botao_home"><?php echo $this->Html->image('button-home.png', array('alt' => ''))?></a>
-		</div>
-
-        <h1>Empresas</h1>
-		  <?php echo $this->fetch('content'); ?>
-            
+        <div id="Menu_Home">
+            <a href="#" id="botao_home"><?php echo $this->Html->image('button-home.png', array('alt' => ''))?></a>
         </div>
 
+        <h1><?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
+            SWSchool - Empresas</h1>
+
+
+		<?php echo $this->fetch('content'); ?>
+
     </body>
-
-
 
 </html>

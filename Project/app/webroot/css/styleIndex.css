@@ -34,7 +34,6 @@ td {
 	sans-serif;
 	color: #ffffff;
 	background-color: #34afc4;
-	margin-top: 10px;
 	padding: 2px 2px 6px 12px;
 }
 
@@ -46,6 +45,14 @@ th {
 	text-align: left;
 	padding: 6px 6px 6px 12px;
 	background: #CAE8EA;
+}
+
+img {
+	margin-top: 5px;
+}
+
+#companyLogo {
+	margin-top: 60px;
 }
 
 #Menu_Home{
@@ -86,3 +93,4 @@ th {
   	 -khtml-border-radius: 10px;
   	 border-radius: 10px;
 }
+

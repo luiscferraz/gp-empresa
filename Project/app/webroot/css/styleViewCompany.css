@@ -87,3 +87,23 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 	border-radius: 0px 22px 22px 0px ;
 }
 
+#botaoEditar{
+	 margin:-20px;
+	 float: right;
+	 padding:5px 5px;
+	 margin-right: 5px;
+	 text-decoration:none;
+	 display: inline-block;
+ 	 padding: 15px 15px;
+  	 font:normal 20px/1.1em arial;
+  	 border:1px solid #d0d0d0;
+  	 border-top-color:#ececec;
+  	 border-bottom-color:#909090;
+  	 color:#333;
+  	 background: -moz-linear-gradient(top, #fff 60%, #e7e7e7);
+  	 background: -webkit-linear-gradient(top, #fff 60%, #e7e7e7);
+  	 -moz-border-radius: 10px;
+  	 -webkit-border-radius: 10px;
+  	 -khtml-border-radius: 10px;
+  	 border-radius: 10px;
+}
