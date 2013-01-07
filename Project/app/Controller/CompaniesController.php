@@ -29,6 +29,8 @@ class CompaniesController extends AppController {
 	}
 	public function edit($id = NULL){
 
+		$this->layout = 'EditCompany';
+
 		$this->Company->id = $id;
 
 		if (!$id) {
@@ -49,7 +51,8 @@ class CompaniesController extends AppController {
 
 		if ($this->Company->saveAll($this->request->data)) {
 
-					
+			$this->Session->setFlash('Empresa atualizada!');
+			$this->redirect(array('action' => 'index'));
 			}
 		}
 	}
