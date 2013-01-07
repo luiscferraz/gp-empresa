@@ -20,6 +20,7 @@
         <fieldset id="dadosEmpresa">
             <legend>Dados da Empresa</legend>
             <?php
+                echo $this->Form->input('id', array('type' => 'hidden'));
                 echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
                 echo $this->Form->input('acronym', array('label' => 'Sigla:'));
                 echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj2'));
@@ -31,6 +32,7 @@
         <fieldset id="dadosEndereço">
             <legend>Endereço</legend>
             <?php
+                echo $this->Form->input('Address.id', array('type' => 'hidden'));
                 echo $this->Form->input('Address.address', array('label' => 'Endereço:'));
                 echo $this->Form->input('Address.number', array('label' => 'Número:'));
                 echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:'));
@@ -46,6 +48,7 @@
         <fieldset id="dadosSponsor">
             <legend>Dados do Sponsor</legend>
             <?php
+                echo $this->Form->input('Sponsor.id', array('type' => 'hidden'));
                 echo $this->Form->input('Sponsor.name', array('label' => 'Nome:'));
                 echo $this->Form->input('Sponsor.phone', array('label' => 'Telefone:', 'id' => 'phone_sponsor'));
                 echo $this->Form->input('Sponsor.email', array('label' => 'Email:'));
@@ -55,6 +58,7 @@
         <fieldset id="dadosFinanceiros">
             <legend>Dados Financeiros</legend>
             <?php
+                echo $this->Form->input('Financial.id', array('type' => 'hidden'));
                 echo $this->Form->input('Financial.name', array('label' => 'Nome:'));
                 echo $this->Form->input('Financial.phone', array('label' => 'Telefone:', 'id' => 'phone_financial'));
                 echo $this->Form->input('Financial.email', array('label' => 'Email:'));
@@ -64,6 +68,7 @@
         <fieldset id="dadosSepg">
             <legend>Dados SEPG</legend>
             <?php
+                echo $this->Form->input('Sepg.id', array('type' => 'hidden'));
                 echo $this->Form->input('Sepg.name', array('label' => 'Nome:'));
                 echo $this->Form->input('Sepg.phone', array('label' => 'Telefone:', 'id' => 'phone_sepg'));
                 echo $this->Form->input('Sepg.email', array('label' => 'Email:'));

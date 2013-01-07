@@ -28,21 +28,30 @@ class CompaniesController extends AppController {
 		
 	}
 	public function edit($id = NULL){
-		
+
 		$this->Company->id = $id;
 
-		$this->layout = 'EditCompany';
-		
-	    if ($this->request->is('get')) {
-	        $this->request->data = $this->Company->read();
-	    } else {
-			if ($this->Company->save($this->request->data)) {
-				$this->Session->setFlash('Empresa Atualizada!');
-				$this->redirect('/Companies');
-			} 
-	    }
+		if (!$id) {
+			throw new NotFoundException(__('Invalid post'));
+		}
 
-	    $this->set('company', $this->Company->findById($id));	
+		$comp = $this->Company->findById($id);
+
+		if (!$comp) {
+			throw new NotFoundException(__('Invalid post'));
+		}
+
+		if ($this->request->is('get')) {
+			$this->request->data = $this->Company->read();
+			}
+			else {
+				$this->Company->id = $id;
+
+		if ($this->Company->saveAll($this->request->data)) {
+
+					
+			}
+		}
 	}
 
 	
