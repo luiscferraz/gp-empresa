@@ -15,8 +15,7 @@ function ValidaCNPJ(cnpj) {
   var strNum_base = 0;
   var iLenNum_base = 0;
 
-  if (cnpj == "")
-        alert("Preencha o campo CNPJ.");
+
 
   l = cnpj.length;
   for (i = 0; i < l; i++) {
@@ -25,8 +24,7 @@ function ValidaCNPJ(cnpj) {
            strNum = strNum + caracter;
   };
 
-  if(strNum.length != 14)
-        alert("CNPJ deve conter 14 caracteres.");
+
 
   strNum_base = strNum.substring(0,12);
   iLenNum_base = strNum_base.length - 1;
@@ -53,7 +51,7 @@ function ValidaCNPJ(cnpj) {
         iSoma = 0;
   strNum_base = strNum_base + iSoma;
   if(strNum != strNum_base)
-        alert("CNPJ inválido.");
+        alert("CNPJ incorreto.");
 
   return ("")
 
