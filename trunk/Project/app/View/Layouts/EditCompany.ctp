@@ -1,7 +1,9 @@
 <?php
   echo $this->Html->script('jquery-1.7');
 ?>
-
+<?php
+  echo $this->Html->script('validacnpj');
+?>
 <?php
     echo $this->Html->script('jquery.maskedinput-1.3');
 ?>

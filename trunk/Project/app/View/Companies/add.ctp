@@ -24,7 +24,7 @@
 		<fieldset id="dadosEmpresa">
 			<legend>Dados da Empresa</legend>
 			<?php
-				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj'));				
+				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'onBlur'=>'ValidaCNPJ(this.value);'));				
 				echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
 				echo $this->Form->input('acronym', array('label' => 'Sigla:'));			
 				echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1'));
