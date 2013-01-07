@@ -1,5 +1,6 @@
 <script src="jquery.js" type="text/javascript"></script>
 <script src="jquery.maskedinput.js" type="text/javascript"></script>
+<script src="validacnpj.js" type="text/javascript"></script>
 
 <script type="text/javascript">
     jQuery(document).ready(function($){        
@@ -13,6 +14,8 @@
 		$("#zip_code").mask("99999-999");
     });
 </script>
+
+
 <div class="companies form">
 	<?php echo $this->Form->create('Company', array('action' => 'add')); ?>
 	
@@ -21,7 +24,7 @@
 		<fieldset id="dadosEmpresa">
 			<legend>Dados da Empresa</legend>
 			<?php
-				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj'));
+				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'onBlur'=>'ValidaCNPJ(this.value);', 'name' => 'cnpj'));				
 				echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
 				echo $this->Form->input('acronym', array('label' => 'Sigla:'));			
 				echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1'));
