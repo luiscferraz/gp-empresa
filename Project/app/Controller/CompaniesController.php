@@ -47,9 +47,17 @@ class CompaniesController extends AppController {
 
 	
 	
-	public function delete($id){
-
-		$this->set(array('removed' => 1));
+	public function delete($id = NULL){
+		
+		$this->Company->id = $id;
+		$this->layout = 'DeleteCompany';
+		
+		
+		$this->Company->saveField('removed',1);
+		
+		$this->Session->setFlash('Empresa removida com sucesso!');
+		
+		$this->redirect('/Companies');
 		
 	}
 	
