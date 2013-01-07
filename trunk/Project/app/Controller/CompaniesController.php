@@ -8,7 +8,7 @@ class CompaniesController extends AppController {
 	
 	public function index(){
 		$this -> layout = 'Index';
-		$this->set('companies', $this->Company->find('all'));		
+		$this->set('companies', $this->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));		
 	}
 	
 	public function add(){
@@ -50,7 +50,7 @@ class CompaniesController extends AppController {
 	public function delete($id = NULL){
 		
 		$this->Company->id = $id;
-		$this->layout = 'DeleteCompany';
+		#$this->layout = 'DeleteCompany';
 		
 		
 		$this->Company->saveField('removed',1);
