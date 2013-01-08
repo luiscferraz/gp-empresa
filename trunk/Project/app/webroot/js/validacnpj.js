@@ -56,3 +56,61 @@ function ValidaCNPJ(cnpj) {
   return ("")
 
 }
+function checkCnpj(src){
+	d = src;
+	if (!validaCnpj(d.value)){
+		d.setCustomValidity("Por favor, forneÃ§a um CNPJ vÃ¡lido no formato xx.xxx.xxx/xxxx-xx");
+	}
+	else{
+		d.setCustomValidity("");
+	}
+}
+
+function validaCnpj(cnpj){
+	exp = /\.|\-|\//g
+    cnpj = cnpj.toString().replace( exp, "" );
+    var dv = cnpj.substr(cnpj.length-2,cnpj.length);
+    cnpj = cnpj.substr(0,12);
+    /*calcular 1º dígito verificador*/
+    var soma;
+    soma = cnpj[0]*6;
+    soma += cnpj[1]*7;
+    soma += cnpj[2]*8;
+    soma += cnpj[3]*9;
+    soma += cnpj[4]*2;
+    soma += cnpj[5]*3;
+    soma += cnpj[6]*4;
+    soma += cnpj[7]*5;
+    soma += cnpj[8]*6;
+    soma += cnpj[9]*7;
+    soma += cnpj[10]*8;
+    soma += cnpj[11]*9;
+    var dv1 = soma%11;
+    if (dv1 == 10){
+        dv1 = 0;
+    }
+    /*calcular 2º dígito verificador*/
+    soma = cnpj[0]*5;
+    soma += cnpj[1]*6;
+    soma += cnpj[2]*7;
+    soma += cnpj[3]*8;
+    soma += cnpj[4]*9;
+    soma += cnpj[5]*2;
+    soma += cnpj[6]*3;
+    soma += cnpj[7]*4;
+    soma += cnpj[8]*5;
+    soma += cnpj[9]*6;
+    soma += cnpj[10]*7;
+    soma += cnpj[11]*8;
+    soma += dv1*9;
+    var dv2 = soma%11;
+    if (dv2 == 10){
+        dv2 = 0;
+    }
+    var digito = dv1+""+dv2;
+    if(dv == digito){ /*compara o dv digitado ao dv calculado*/
+        return true;
+    }else{
+        return false;
+    }
+}
