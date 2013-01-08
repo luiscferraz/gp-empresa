@@ -31,7 +31,7 @@
 		<fieldset id="dadosEndereço">
 			<legend>Endereço</legend>
 			<?php
-				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code', 'required'=>'required'));                
+				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code', 'required'=>'required', 'onBlur' => 'getEndereco()'));                
 				echo $this->Form->input('Address.address', array('label' => 'Endereço:', 'id' => 'address', 'required'=>'required'));
 				echo $this->Form->input('Address.number', array('label' => 'Número:', 'required'=>'required'));
 				echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:', 'id' => 'neighborhood', 'required'=>'required'));
