@@ -1,7 +1,3 @@
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.maskedinput.js" type="text/javascript"></script>
-<script src="validacnpj.js" type="text/javascript"></script>
-
 <script type="text/javascript">
     jQuery(document).ready(function($){        
         $('#cnpj').focus();
@@ -24,9 +20,9 @@
 		<fieldset id="dadosEmpresa">
 			<legend>Dados da Empresa</legend>
 			<?php
-				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'onBlur'=>'ValidaCNPJ(this.value);'));				
+				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj'));				
 				echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
-				echo $this->Form->input('acronym', array('label' => 'Sigla:'));			
+				echo $this->Form->input('acronym', array('label' => 'Sigla:', 'required'=>'required' ));			
 				echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1'));
 				echo $this->Form->input('phone2', array('label' => 'Telefone 2 (opcional):', 'id' => 'phone2'));
 			?>
@@ -35,8 +31,7 @@
 		<fieldset id="dadosEndereço">
 			<legend>Endereço</legend>
 			<?php
-				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code'));
-                echo '<input type="button" style="width:130;height:30" value="Buscar Endereço" onclick="getEndereco()"/>';			
+				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code'));                
 				echo $this->Form->input('Address.address', array('label' => 'Endereço:', 'id' => 'address'));
 				echo $this->Form->input('Address.number', array('label' => 'Número:'));
 				echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:', 'id' => 'neighborhood'));

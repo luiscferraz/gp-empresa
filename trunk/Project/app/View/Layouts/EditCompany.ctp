@@ -7,6 +7,13 @@
 <?php
     echo $this->Html->script('jquery.maskedinput-1.3');
 ?>
+<?php
+    echo $this->Html->script('buscacep');
+?>
+<?php
+    echo $this->Html->script('aplicacao');
+?>
+
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">

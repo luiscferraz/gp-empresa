@@ -9,6 +9,9 @@
 <?php
     echo $this->Html->script('buscacep');
 ?>
+<?php
+    echo $this->Html->script('aplicacao');
+?>
 
 
 <?php

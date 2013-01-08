@@ -1,11 +1,7 @@
-<script src="jquery.js" type="text/javascript"></script>
-<script src="jquery.maskedinput.js" type="text/javascript"></script>
-<script src="validacnpj.js" type="text/javascript"></script>
-
 <script type="text/javascript">
     jQuery(document).ready(function($){        
         $('#cnpj').focus();
-        $("#cnpj2").mask("99.999.999/9999-99");
+        $("#cnpj").mask("99.999.999/9999-99");
 		$("#phone1").mask("(99)9999-9999");
 		$("#phone2").mask("(99)9999-9999");
 		$("#phone_financial").mask("(99)9999-9999");
@@ -24,7 +20,7 @@
                 echo $this->Form->input('id', array('type' => 'hidden'));
                 echo $this->Form->input('name', array('label' => 'Nome da empresa:'));
                 echo $this->Form->input('acronym', array('label' => 'Sigla:'));
-                echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'onBlur'=>'ValidaCNPJ(this.value);'));	
+                echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj'));	
                 echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1'));
                 echo $this->Form->input('phone2', array('label' => 'Telefone 2 (opcional):', 'id' => 'phone2'));
             ?>
@@ -34,13 +30,13 @@
             <legend>Endereço</legend>
             <?php
                 echo $this->Form->input('Address.id', array('type' => 'hidden'));
-                echo $this->Form->input('Address.address', array('label' => 'Endereço:'));
+				echo $this->Form->input('Address.zip_code', array('label' => 'CEP:', 'id' => 'zip_code'));  
+                echo $this->Form->input('Address.address', array('label' => 'Endereço:', 'id' => 'address'));
                 echo $this->Form->input('Address.number', array('label' => 'Número:'));
-                echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:'));
-                echo $this->Form->input('Address.city', array('label' => 'Cidade:'));
+                echo $this->Form->input('Address.neighborhood', array('label' => 'Bairro:', 'id' => 'neighborhood'));
+                echo $this->Form->input('Address.city', array('label' => 'Cidade:', 'id' => 'city'));
                 echo $this->Form->input('Address.state',array('options' => array("AC"=>"AC","AL"=>"AL","AP"=>"AP","AM"=>"AM","BA"=>"BA","CE"=>"CE","DF"=>"DF","ES"=>"ES","GO"=>"GO","MA"=>"MA","MG"=>"MG","MT"=>"MT","MS"=>"MS","PA"=>"PA","PB"=>"PB","PE"=>"PE","PI"=>"PI","PR"=>"PR","RJ"=>"RJ","RN"=>"RN","RO"=>"RO","RR"=>"RR","RS"=>"RS","SC"=>"SC","SE"=>"SE","SP"=>"SP","TO"=>"TO"),'type' => 'select', 'empty' => 'Selecione','label' => 'Estado: ', 'id' => 'state'));
-                echo $this->Form->input('Address.complement', array('label' => 'Complemento:'));
-                echo $this->Form->input('Address.zip_code', array('label' => 'CEP:'));
+                echo $this->Form->input('Address.complement', array('label' => 'Complemento:'));                
             ?>
         </fieldset>
     </div>

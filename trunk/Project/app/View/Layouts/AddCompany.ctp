@@ -7,9 +7,11 @@
 <?php
     echo $this->Html->script('jquery.maskedinput-1.3');
 ?>
-
 <?php
     echo $this->Html->script('buscacep');
+?>
+<?php
+    echo $this->Html->script('aplicacao');
 ?>
 
 <!DOCTYPE html>
