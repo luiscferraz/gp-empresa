@@ -20,7 +20,7 @@
 		<fieldset id="dadosEmpresa">
 			<legend>Dados da Empresa</legend>
 			<?php
-				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'required'=>'required'));				
+				echo $this->Form->input('cnpj', array('label' => 'CNPJ:', 'id' => 'cnpj', 'required'=>'required', 'onchange' => 'checkCnpj(this)'));				
 				echo $this->Form->input('name', array('label' => 'Nome da empresa:', 'required'=>'required'));
 				echo $this->Form->input('acronym', array('label' => 'Sigla:', 'required'=>'required' ));			
 				echo $this->Form->input('phone1', array('label' => 'Telefone:', 'id' => 'phone1', 'required'=>'required'));
