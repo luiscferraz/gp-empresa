@@ -138,6 +138,27 @@ DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
 
 
+-- -----------------------------------------------------
+-- Table `swsdb`.`projects`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `swsdb`.`projects` ;
+
+CREATE  TABLE IF NOT EXISTS `swsdb`.`projects` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(45) NOT NULL ,
+  `description` VARCHAR(200) NOT NULL ,
+  `acronym` VARCHAR(15) NULL ,
+  `time_a` INT(4) NOT NULL ,
+  `time_b` INT(4) NOT NULL ,
+  `time_c` INT(4) NOT NULL ,
+  `parent_project_id` int(5) NOT NULL ,
+  `company_id` INT NOT NULL,
+  `inactive` TINYINT(1) NOT NULL ,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_general_ci;
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
