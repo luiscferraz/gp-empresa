@@ -5,6 +5,15 @@ class Company extends AppModel {
    public $useTable = 'companies';
 
    //public $hasOne = 'Documento';
+   
+
+public $validate = array(
+    'cnpj' => array(
+        'rule'    => 'isUnique',
+        'message' => 'CNPJ ja existe'
+    )
+);
+
 
    public $hasOne = array(
       'Address' => array(
