@@ -27,6 +27,7 @@
 				<div>
         <a href="companies"> Empresas </a></br>
 		<a href="consultants"> Consultores </a></br>
+		<a href="projects"> Projetos </a></br>
 	</div>
   
 <div class="conteudo" >
