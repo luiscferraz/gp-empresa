@@ -148,11 +148,11 @@ CREATE  TABLE IF NOT EXISTS `swsdb`.`projects` (
   `name` VARCHAR(45) NOT NULL ,
   `description` VARCHAR(200) NOT NULL ,
   `acronym` VARCHAR(15) NULL ,
-  `time_a` INT(4) NOT NULL ,
-  `time_b` INT(4) NOT NULL ,
-  `time_c` INT(4) NOT NULL ,
-  `parent_project_id` int(5) NOT NULL ,
-  `company_id` INT NOT NULL,
+  `time_a` INT(4) ,
+  `time_b` INT(4) ,
+  `time_c` INT(4) ,
+  `parent_project_id` int(5) ,
+  `company_id` INT ,
   `inactive` TINYINT(1) NOT NULL ,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
