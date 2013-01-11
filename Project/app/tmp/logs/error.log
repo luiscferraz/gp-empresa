@@ -634,3 +634,182 @@
 2013-01-07 03:56:15 Error: [MissingControllerException] Controller class JsController could not be found.
 #0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-07 04:04:06 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:04:06 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:05:03 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:05:03 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:23:56 Error: [MissingActionException] Action CompaniesController::jquery.maskedinput.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:23:56 Error: [MissingActionException] Action CompaniesController::jquery.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:43:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:43:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:43:38 Error: [MissingActionException] Action CompaniesController::jquery.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:43:38 Error: [MissingActionException] Action CompaniesController::validacnpj.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:43:38 Error: [MissingActionException] Action CompaniesController::jquery.maskedinput.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:00 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 04:47:16 Error: [MissingActionException] Action CompaniesController::jquery.maskedinput.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:16 Error: [MissingActionException] Action CompaniesController::jquery.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:16 Error: [MissingActionException] Action CompaniesController::validacnpj.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:45 Error: [MissingActionException] Action CompaniesController::validacnpj.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:45 Error: [MissingActionException] Action CompaniesController::jquery.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:47:45 Error: [MissingActionException] Action CompaniesController::jquery.maskedinput.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:51:20 Error: [MissingActionException] Action CompaniesController::jquery.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-07 04:51:20 Error: [MissingActionException] Action CompaniesController::validacnpj.js() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+ {main}
+2013-01-07 05:27:01 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 05:27:01 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 05:27:13 Error: [NotFoundException] Invalid post
+#0 [internal function]: CompaniesController->edit('jquery.js')
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompaniesController), Array)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-07 05:27:14 Error: [NotFoundException] Invalid post
+#0 [internal function]: CompaniesController->edit('jquery.maskedin...')
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompaniesController), Array)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-07 05:28:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 05:28:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-07 05:28:30 Error: [NotFoundException] Invalid post
+#0 [internal function]: CompaniesController->edit('jquery.js')
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompaniesController), Array)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-07 05:28:30 Error: [NotFoundException] Invalid post
+#0 [internal function]: CompaniesController->edit('jquery.maskedin...')
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(CompaniesController), Array)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(CompaniesController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-09 03:50:14 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 04:00:29 Error: [MissingActionException] Action PagesController::index() could not be found.
+#0 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-11 00:37:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-11 00:40:34 Error: [MissingTableException] Table projects for model Project was not found in datasource default.
+#0 C:\gp-empresa\Project\lib\Cake\Model\Model.php(3186): Model->setSource('projects')
+#1 C:\gp-empresa\Project\lib\Cake\Model\Model.php(2637): Model->getDataSource()
+#2 C:\gp-empresa\Project\lib\Cake\Controller\Component\PaginatorComponent.php(173): Model->find('all', Array)
+#3 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(1081): PaginatorComponent->paginate(NULL, Array, Array)
+#4 C:\gp-empresa\Project\app\Controller\ProjectsController.php(9): Controller->paginate()
+#5 [internal function]: ProjectsController->index()
+#6 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(ProjectsController), Array)
+#7 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-01-11 00:43:53 Error: [MissingViewException] View file "C:\gp-empresa\Project\app\View\Projects\index.ctp" is missing.
+#0 C:\gp-empresa\Project\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-11 01:36:45 Error: [MissingViewException] View file "C:\gp-empresa\Project\app\View\Projects\index.ctp" is missing.
+#0 C:\gp-empresa\Project\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\gp-empresa\Project\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\gp-empresa\Project\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ProjectsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\gp-empresa\Project\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
