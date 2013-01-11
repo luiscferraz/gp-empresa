@@ -2,6 +2,9 @@
 App::uses('AppController', 'Controller');
 
 class ProjectsController extends AppController {
+        public $helpers = array ('html','form');
+        public $name = 'Projects';
+        var $scaffold;
 
 
 	public function index() {
@@ -20,7 +23,10 @@ class ProjectsController extends AppController {
 				 
 			}
 		}
-		else{			
+		else{
+                        $this-> set ('projects',$this->Project->find('all'));
+                        $this-> set ('companies',$this->Project->Company->find('all'));
+		
 			$this->Session->setFlash('O projeto não foi cadastrado. Tente novamente!');			
 		}
 		
