@@ -8,6 +8,8 @@ class ProjectsController extends AppController {
 
 
 	public function index() {
+		$this -> layout = 'IndexProject';
+
 		$this->Project->recursive = 0;
 		$this->set('projects', $this->paginate());
 	}
