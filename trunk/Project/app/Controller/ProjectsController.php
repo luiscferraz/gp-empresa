@@ -8,8 +8,8 @@ class ProjectsController extends AppController {
 
 
 	public function index(){
-		$this -> layout = 'Index';
-		$this->set('project', $this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));		
+		$this -> layout = 'IndexProject';
+		$this->set('projects', $this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));		
 	}
 
 	public function add(){
@@ -41,6 +41,7 @@ class ProjectsController extends AppController {
 		else{
 			return 1;
 		}
+	}
 
 
 	public function edit($id = NULL){
