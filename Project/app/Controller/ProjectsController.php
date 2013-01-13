@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 App::uses('AppController', 'Controller');
 
 class ProjectsController extends AppController {
@@ -7,11 +7,9 @@ class ProjectsController extends AppController {
         var $scaffold;
 
 
-	public function index() {
-		$this -> layout = 'IndexProject';
-
-		$this->Project->recursive = 0;
-		$this->set('projects', $this->paginate());
+	public function index(){
+		$this -> layout = 'Index';
+		$this->set('project', $this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));		
 	}
 
 	public function add(){
@@ -33,6 +31,17 @@ class ProjectsController extends AppController {
 		}
 		
 	}
+
+	private function existe($nome){
+		$foundProject = $this->Project->find('first',array('conditions'=> array('Project.name ==' => $nome)));
+		if ($foundProject == NULL){
+			return 0;
+		}
+		
+		else{
+			return 1;
+		}
+
 
 	public function edit($id = NULL){
 
@@ -65,6 +74,21 @@ class ProjectsController extends AppController {
 			}
 		}
 	}
+
+
+	public function delete($id = NULL){
+		
+		$this->Project->id = $id;
+				
+		
+		$this->Project->saveField('inactive',1);
+		
+		$this->Session->setFlash('Projeto removido com sucesso!');
+		
+		$this->redirect('/Projects');
+		
+	}
+
 
 	public function view($id){
 
