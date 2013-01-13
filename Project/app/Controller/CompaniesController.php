@@ -19,11 +19,11 @@ class CompaniesController extends AppController {
 			if($this->Company->saveAll($this->request->data)){
 				$this->Session->setFlash('Empresa cadastrada com sucesso!');
 				$this->redirect(array('action' => 'index'));
+				}
 				 
 			}
-		}
 		else{			
-			$this->Session->setFlash('A empresa não foi cadastrada. Tente novamente!');			
+			$this->Session->setFlash('');			
 		}
 		
 	}
