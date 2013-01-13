@@ -79,17 +79,18 @@ class ProjectsController extends AppController{
 	
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Project->read();
-			$this-> set ('projects',$this->Project->find('all'));
-            $this-> set ('companies',$this->Project->Company->find('all'));
+			$this-> set ('projects',$this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));
+            $this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));
 		}
 
 		else {
 			$this->Project->id = $id;
+			if ($this->Project->saveAll($this->request->data)) {	
+				$this->Session->setFlash('Projeto atualizado!');
+				$this->redirect(array('action' => 'index'));
+			}
 		}
-		if ($this->Project->saveAll($this->request->data)) {	
-			$this->Session->setFlash('Projeto atualizado!');
-			$this->redirect(array('action' => 'index'));
-		}
+		
 		
 	}
 	
@@ -111,7 +112,7 @@ class ProjectsController extends AppController{
 		$this->layout = 'ViewProject';
 		
 	    if ($this->request->is('get')) {
-	        $this->set('Project', $this->Project->read());
+	        $this->set('project', $this->Project->read());
 	    }
 	}
 }
