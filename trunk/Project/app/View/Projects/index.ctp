@@ -1,4 +1,4 @@
-<div class="project index">
+﻿<div class="project index">
 
 	<table cellpadding="0" cellspacing="0">
 		<tr>
@@ -40,8 +40,8 @@
 					array('escape'=>false, 'id'=>'link'))?>
 
 					<?php echo $this->Html->link(
-					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $project['Company']['id']),
-					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do projeto ". $project['Company']['name'] . "?");
+					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $project['Project']['id']),
+					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do projeto ". $project['Project']['name'] . "?");
 					
 					echo $this->Session->flash();
 					?></td>
