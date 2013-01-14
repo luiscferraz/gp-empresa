@@ -3,13 +3,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Cadastrar Empresa</title>
-	<?php echo $this->Html->css('styleAddEditCompany'); ?>
+	<?php echo $this->Html->css('style'); ?>
 	
 </head>
 <body>
-	<a href="/index" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
+	<a href="/projects" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
-	<h1>Cadastrar Projeto</h1>
+	<h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?>
+		Cadastrar Projeto</h1>
 
 	<?php echo $this->fetch('content'); ?>
 </body>

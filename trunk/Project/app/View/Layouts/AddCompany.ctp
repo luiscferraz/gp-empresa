@@ -19,7 +19,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Cadastrar Empresa</title>
-	<?php echo $this->Html->css('styleAddEditCompany'); ?>
+	<?php echo $this->Html->css('styleCompany'); ?>
 	
 </head>
 <body>
