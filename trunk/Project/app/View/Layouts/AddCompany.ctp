@@ -19,13 +19,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Cadastrar Empresa</title>
-	<?php echo $this->Html->css('styleCompany'); ?>
+	<?php echo $this->Html->css('style'); ?>
 	
 </head>
 <body>
 	<a href="/Companies" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
-	<h1>Cadastrar Empresa</h1>
+	<h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?>
+		Cadastrar Empresa</h1>
 
 	<?php echo $this->fetch('content'); ?>
 	<?php echo $this->Js->writeBuffer(); // note: write cached scripts ?>
