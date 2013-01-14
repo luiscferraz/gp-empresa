@@ -16,6 +16,7 @@ class ProjectsController extends AppController{
 
 		$this -> layout = 'IndexProject';
 		$this->set('projects', $this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));		
+		$this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.id =' => 'Project.company_id'))));		
 
 	}
 	
