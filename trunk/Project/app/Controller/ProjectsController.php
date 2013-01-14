@@ -42,7 +42,6 @@ class ProjectsController extends AppController{
 			}
 				}
 				 
-
 		else{
                  $this-> set ('projects',$this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));
                         
