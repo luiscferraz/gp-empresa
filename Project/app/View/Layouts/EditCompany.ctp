@@ -20,13 +20,14 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Editar Empresa</title>
-	<?php echo $this->Html->css('styleAddEditCompany'); ?>
+	<?php echo $this->Html->css('styleCompany'); ?>
 	
 </head>
 <body>
 	<a href="/Companies" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
-	<h1>Editar Empresa</h1>
+	<h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?>
+		Editar Empresa</h1>
 
 	<?php echo $this->fetch('content'); ?>
 	<?php echo $this->Js->writeBuffer(); // note: write cached scripts ?>

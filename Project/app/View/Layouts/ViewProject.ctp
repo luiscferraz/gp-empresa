@@ -3,19 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Dados do projeto</title>
-	<?php echo $this->Html->css('styleViewProject'); ?>
+	<?php echo $this->Html->css('style'); ?>
 	
 </head>
 <body>
-	<a href="/Project/projects" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
-
+	<a href="/projects" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
 	<?php echo $this->Html->link("Editar", array('action' => 'edit', $project['Project']['id']),
 					array('escape'=>false, 'id'=>'botaoEditar'))?>
 
 
 	<h1>
-		<?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
+		<?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?> 
 		Projeto: <?php echo $project['Project']['name']; ?> 
 	</h1>
 

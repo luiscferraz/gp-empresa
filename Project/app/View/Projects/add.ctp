@@ -3,7 +3,7 @@
 	
 	
 	<div class="left">
-		<fieldset id="dadosProjeto">
+		<div class="dadosProjeto">
 			<legend>Dados do Projeto</legend>
 			<?php
 				foreach ($projects as $project)
@@ -30,16 +30,16 @@
 				echo $this->Form->input('company_id',array('options' => $list_companies,'type' => 'select', 'empty' => 'Selecione','label' => 'Projeto Empresa: ', 'id' => 'company', 'required'=>'required'));
 
 				?>
-		</fieldset>
+		</div>
 
-		<fieldset id="dadosHoras">
+		<div class="dadosHoras">
 			<legend>Horas</legend>
 			<?php
 				echo $this->Form->input('time_a', array('label' => 'Tipo A:', 'id' => 'tempoA'));                
 				echo $this->Form->input('time_b', array('label' => 'Tipo B:', 'id' => 'tempoB'));  
 				echo $this->Form->input('time_c', array('label' => 'Tipo C:', 'id' => 'tempoC'));  
 			?>
-		</fieldset>
+		</div>
 	<div>
 	
 	<div class="right">

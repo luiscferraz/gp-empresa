@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Dados da empresa</title>
-	<?php echo $this->Html->css('styleViewCompany'); ?>
+	<?php echo $this->Html->css('styleCompany'); ?>
 	
 </head>
 <body>
@@ -15,7 +15,7 @@
 
 
 	<h1>
-		<?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
+		<?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?> 
 		Empresa: <?php echo $company['Company']['name']; ?> 
 	</h1>
 
