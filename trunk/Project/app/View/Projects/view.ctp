@@ -29,10 +29,11 @@
 			echo ' / Tipo C: ';
 			echo $project['Project']['time_c']; 
 		?></p>
-		<p id='total'><?php 
+		<p id='total'><b><?php 
 			echo 'Total: ';
 			echo $project['Project']['time_a'] + $project['Project']['time_b'] + $project['Project']['time_c'];
-		?></p>
+			echo ' horas.';
+		?></p></b>
 	</div>
 
 </div>
