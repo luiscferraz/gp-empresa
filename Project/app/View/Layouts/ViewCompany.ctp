@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Dados da empresa</title>
-	<?php echo $this->Html->css('styleCompany'); ?>
+	<?php echo $this->Html->css('style'); ?>
 	
 </head>
 <body>

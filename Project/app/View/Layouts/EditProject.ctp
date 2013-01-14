@@ -7,7 +7,7 @@
 	
 </head>
 <body>
-	<a href="/Project/projects" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
+	<a href="/projects" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
 	<h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?>
 		Editar Projeto</h1>
