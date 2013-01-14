@@ -53,8 +53,6 @@ legend{
 	font-size: 22px;
 }
 
-
-
 div.left {
 	float: left;
 	margin-left: 10%;
@@ -66,8 +64,6 @@ div.right {
 	float: right;
 	width: 45%;
 }
-
-
 
 h1 {
 	text-shadow: 0px 1px 0.5px #666;
@@ -142,6 +138,7 @@ img {
 	 text-decoration:none;
 	 display: inline-block;
  	 padding: 15px 15px;
+ 	 font-size: 20px;
   	 font-family: "Tahoma", sans-serif;
   	 border:1px solid #d0d0d0;
   	 border-top-color:#ececec;
@@ -239,7 +236,7 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 	 text-decoration:none;
 	 display: inline-block;
  	 padding: 15px 15px;
-  	 font:normal 20px/1.1em arial;
+  	 font:normal 25px/1.1em arial;
   	 border:1px solid #d0d0d0;
   	 border-top-color:#ececec;
   	 border-bottom-color:#909090;
@@ -262,11 +259,11 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 #Menu_Home{
 	z-index:99999;
     background-color: #010101;
-    width:500px;
+    width:250px;
 	opacity:0.85;
 	/*alterado*/
 	padding:10px 0px 10px 0px;
-    margin-left: -500px;
+    margin-left: -250px;
 	position:fixed;
     height: 100%;
     border:2px solid #010101;
@@ -302,8 +299,8 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 	color:#c3c3c3;
 	margin-left:-10px;
 	text-decoration:none;
-	font-size:40px;
-	width:530px;
+	font-size:30px;
+	width:270px;
 	background-color: #010101;
 	display:block;
 	padding:10px 10px 10px 20px;

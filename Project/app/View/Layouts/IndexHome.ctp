@@ -27,18 +27,8 @@
     <body>
 
     
-	<h1><?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
-            SWSchool - Agenda</h1>      
+	<h1> <div align=center><?php echo $this->Html->image('sw-quality.png'); ?></div> </h1>      
 
-				<div>
-        <a href="companies"> Empresas </a></br>
-		<a href="consultants"> Consultores </a></br>
-		<a href="projects"> Projetos </a></br>
-	</div>
-  
-<p align = "center" style="font-size: 200px"> =) </p>
-
-		
 
     </body>
 

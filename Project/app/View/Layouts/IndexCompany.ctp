@@ -21,7 +21,7 @@
         <?php echo $this->Html->link("Cadastrar", array('action' => 'add'),array('id' => 'botaoCadastrar')); ?>
 
         <h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?> 
-            SWSchool - Empresas</h1>
+            Empresas</h1>
 
 
 		<?php echo $this->fetch('content'); ?>
