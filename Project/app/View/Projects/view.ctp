@@ -1,6 +1,6 @@
 <div class="project view">
 	
-	<div class='dadosProjeto'>
+	<div class='dadosProjeto' id='viewDadosProjeto'>
 		<p><?php 
 				echo 'Sigla: ';
 				echo $project['Project']['acronym'];
@@ -19,7 +19,7 @@
 			?></p>
 	</div>
 
-	<div class='dadosHoras'>
+	<div class='dadosHoras', id='viewDadosHoras'>
 		<h2>Organização de horas</h2>
 		<p><?php 
 			echo 'Tipo A: ';
