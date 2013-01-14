@@ -1,17 +1,10 @@
-<?php
-  echo $this->Html->script('jquery-1.7');
-?>
-<?php
-  echo $this->Html->script('validacnpj');
-?>
-<?php
-    echo $this->Html->script('jquery.maskedinput-1.3');
-?>
-<?php
-    echo $this->Html->script('buscacep');
-?>
-<?php
+<?php 
+	echo $this->Html->script('jquery-1.7');
+	echo $this->Html->script('validacnpj');
+	echo $this->Html->script('jquery.maskedinput-1.3');
+	echo $this->Html->script('buscacep');
     echo $this->Html->script('aplicacao');
+	include 'includes/menu.php'; 
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +16,6 @@
 	
 </head>
 <body>
-	<a href="/Companies" id="botaoHome"><?php echo $this->Html->image('button-home.png')?></a>
 
 	<h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?>
 		Cadastrar Empresa</h1>

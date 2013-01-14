@@ -1,3 +1,9 @@
+<?php 
+	echo $this->Html->script('jquery-1.7');
+    echo $this->Html->script('aplicacao');
+	include 'includes/menu.php'; 
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -14,7 +20,7 @@
 		<?php echo $this->Html->script('jquery.weekcalendar') ?>
 		<?php echo $this->Html->script('demo') ?>
 		<?php echo $this->Html->script('aplicacao'); ?>		
-		
+		<?php echo $this->Html->css('style'); ?>
         <title>SWSchool Home</title>
     </head>
 
