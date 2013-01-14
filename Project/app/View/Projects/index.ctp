@@ -27,7 +27,7 @@
 		<tr <?php echo $class; ?>>
 			<td class="nome"><?php echo $project['Project']['name']; ?></td>
 			<td class="sigla"><?php echo $project['Project']['acronym']; ?></td>
-			<td class="empresa"><?php echo $project['Project']['company_id']; ?></td>
+			<td class="empresa"><?php echo $project['Company']['name']; ?></td>
 			<td class="tempo"><?php echo $project['Project']['time_a']; ?></td>
 
 			<div class="actions">
