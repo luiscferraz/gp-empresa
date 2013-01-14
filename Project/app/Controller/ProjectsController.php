@@ -68,7 +68,7 @@ class ProjectsController extends AppController{
 	
 		$this->layout = 'EditProject';
 		$this->Project->id = $id;
-		echo $this->Project->id;
+		
 		if (!$id) {
 			throw new NotFoundException(__('Invalid post'));
 		}
