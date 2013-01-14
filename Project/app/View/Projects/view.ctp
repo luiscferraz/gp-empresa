@@ -15,7 +15,7 @@
 			?></p>
 		<p><?php 
 				echo 'Empresa: ';
-				echo $project['Project']['company_id'];
+				echo $project['Company']['name'];
 			?></p>
 	</div>
 
