@@ -201,6 +201,19 @@ div.dadosEmpresa, div.dadosEndereco, div.dadosSponsor, div.dadosFinancial, div.d
 	border-radius: 8px 8px 8px 8px;
 }
 
+#viewDadosProjeto {
+	float: left;
+	margin-right: 5%;
+	margin-left: 10%;
+	width: 30%;
+}
+
+#viewDadosHoras {
+	float: right;
+	margin-right: 15%;
+	width: 30%;
+}
+
 div.dadosEmpresa {
 	float: left;
 	width: 25%;
