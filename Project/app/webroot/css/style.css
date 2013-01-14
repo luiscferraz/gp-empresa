@@ -127,24 +127,11 @@ img {
 	margin-top: 5px;
 }
 
-fieldset.dadosHoras, fieldset.dadosProjeto {
-
-}
-
 #companyLogo {
 	margin-top: 1px;
 	width:10%;
 	height:10%; 
 	margin-bottom: -30px;
-}
-
-#Menu_Home{
-    background-color: #010101;
-	border-radius: 0px 22px 22px 0px ;
-	padding:10px 0px 10px 0px;
-    margin-left: -150px;
-	position:fixed;
-    height: 100%;
 }
 
 #botaoCadastrar{
@@ -163,16 +150,6 @@ fieldset.dadosHoras, fieldset.dadosProjeto {
 	 background: -moz-linear-gradient(top, #fff 60%, #e7e7e7);
   	 background: -webkit-linear-gradient(top, #fff 60%, #e7e7e7);
   	 border-radius: 10px 10px 10px 10px;
-}
-
-#botaoHome {
-	margin-left: -10px;
-	margin-top: 80px;
-	position: absolute;
-	background-color: #010101;
-	display: block;
-	padding: 10px 10px 10px 20px;
-	border-radius: 0px 22px 22px 0px;
 }
 
 #botao_buscaCEP {
@@ -273,4 +250,68 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
   	 -webkit-border-radius: 10px;
   	 -khtml-border-radius: 10px;
   	 border-radius: 10px;
+}
+
+
+
+/* =======================
+==========================
+==== MENU PRINCIPAL ======
+==========================
+==========================*/
+#Menu_Home{
+	z-index:99999;
+    background-color: #010101;
+    width:500px;
+	opacity:0.85;
+	/*alterado*/
+	padding:10px 0px 10px 0px;
+    margin-left: -500px;
+	position:fixed;
+    height: 100%;
+    border:2px solid #010101;
+	/*end*/
+}
+#Menu_Home ul  {
+	margin-top:10px;
+	margin-left:0px;
+	padding:0px;
+}
+#Menu_Home ul li{
+	list-style:none;
+	color:#FFF;
+	opacity:1;
+}
+#Menu_Home ul li a{
+	text-decoration:none;
+	opacity:1 !important;
+	color:#000;
+	display:block;
+	padding:20px 0px 20px 100px;
+	margin-top:10px;
+	font-size:26px;
+	color:#FFF;
+	
+}
+#Menu_Home ul li a:hover {
+	background-color:#1fa0b7;
+}
+
+#botao_home {
+	color:#1fa0b7;
+	margin-left:-10px;
+	text-decoration:none;
+	font-size:40px;
+	width:530px;
+	background-color: #010101;
+	display:block;
+	padding:10px 10px 10px 20px;
+	border-radius: 0px 22px 22px 0px ;
+	-webkit-border-radius: 0px 22px 22px 0px ;
+	-moz-border-radius: 0px 22px 22px 0px ;
+	line-height: 50px;
+	padding-left:40px;
+}
+#botao_home img{
+	margin-left:60px;
 }
