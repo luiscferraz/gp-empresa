@@ -22,6 +22,7 @@
                         }
             ?>
             <?php
+            	echo $this->Form->input('id', array('type' => 'hidden'));
                 echo $this->Form->input('name', array('label' => 'Nome:', 'required'=>'required'));             
                 echo $this->Form->input('description', array('label' => 'Descrição:', 'required'=>'required'));
                 echo $this->Form->input('acronym', array('label' => 'Sigla:', 'required'=>'required' ));                            

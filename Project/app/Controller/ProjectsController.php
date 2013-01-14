@@ -68,6 +68,7 @@ class ProjectsController extends AppController{
 	
 		$this->layout = 'EditProject';
 		$this->Project->id = $id;
+		echo $this->Project->id;
 		if (!$id) {
 			throw new NotFoundException(__('Invalid post'));
 		}
@@ -82,16 +83,14 @@ class ProjectsController extends AppController{
 			$this-> set ('projects',$this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1))));
             $this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));
 		}
-
 		else {
 			$this->Project->id = $id;
+			
 			if ($this->Project->saveAll($this->request->data)) {	
 				$this->Session->setFlash('Projeto atualizado!');
 				$this->redirect(array('action' => 'index'));
-			}
 		}
-		
-		
+		}
 	}
 	
 	
