@@ -18,7 +18,7 @@
             <a href="#" id="botao_home"><?php echo $this->Html->image('button-home.png', array('alt' => ''))?></a>
         </div>
 
-        <h1><?php echo $this->Html->image('company-logo.png', array('id'=>'companyLogo'))?> 
+        <h1><?php echo $this->Html->image('sw-quality.png', array('id'=>'companyLogo'))?> 
             SWSchool - Empresas</h1>
 
 
