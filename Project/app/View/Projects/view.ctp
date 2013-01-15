@@ -1,5 +1,9 @@
 <div class="project view">
-	
+	<?php
+
+				?>
+					
+					
 	<div class='dadosProjeto' id='viewDadosProjeto'>
 		<p><?php 
 				echo 'Sigla: ';
@@ -11,7 +15,7 @@
 			?></p>
 		<p><?php 
 				echo 'Projeto pai: ';
-				echo $project['Project']['parent_project_id'];
+				echo  $name_parent_project;
 			?></p>
 		<p><?php 
 				echo 'Empresa: ';
