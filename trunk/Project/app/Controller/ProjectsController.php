@@ -113,6 +113,27 @@ class ProjectsController extends AppController{
 	    if ($this->request->is('get')) {
 	        $this->set('project', $this->Project->read());
 	    }
-	}
+		$Projects =  $this->Project->findById($id);
+		if (($Projects['Project']['parent_project_id']) != NULL){
+        $name_parent_project = $this->get_name_parent_project($Projects['Project']['parent_project_id']);
+        $this -> set('name_parent_project', $name_parent_project);
+		}
+		else {
+		$name_parent_project = Null; 
+        $this -> set('name_parent_project', $name_parent_project);		
+		}
+        
+    }
+       
+        private function get_name_parent_project($id){
+                $name = $this->Project->findById($id);
+                return $name['Project']['name'];
+               
+        }
+	
+	
+	
+	
+	
 }
 ?>
