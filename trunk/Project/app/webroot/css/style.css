@@ -156,8 +156,7 @@ img {
 
 p {
 	color: black;
-	font: 16px "Trebuchet MS", Verdana, Arial, Helvetica,
-	sans-serif;
+	font: 16px "Tahoma", sans-serif;
 }
 
 
@@ -236,7 +235,8 @@ div.dadosSponsor, div.dadosFinancial, div.dadosSepg {
 	 text-decoration:none;
 	 display: inline-block;
  	 padding: 15px 15px;
-  	 font:normal 25px/1.1em arial;
+  	 font-size: 20px;
+  	 font-family: "Tahoma", sans-serif;
   	 border:1px solid #d0d0d0;
   	 border-top-color:#ececec;
   	 border-bottom-color:#909090;
