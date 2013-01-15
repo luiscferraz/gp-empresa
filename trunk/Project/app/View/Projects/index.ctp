@@ -1,6 +1,7 @@
 ﻿<div class="project index">
 
 	<table cellpadding="0" cellspacing="0">
+	<h3><div align=center><?php echo $this->Session->flash(); ?></div></h3>
 		<tr>
 			<th>Nome</th>
 			<th>Sigla</th>
@@ -8,7 +9,7 @@
 			<th>Tempo</th>
 			<th class="actions">Ações</th>
 		</tr>
-
+		
 		<?php
 			
 			$i = 0;
@@ -19,11 +20,13 @@
 				if($i++ % 2 == 0)
 				{
 					$class = 'class="altrow"';
+					
 				}
 					
 							
 		?>
-
+		
+				
 		<tr <?php echo $class; ?>>
 			<td class="nome"><?php echo $project['Project']['name']; ?></td>
 			<td class="sigla"><?php echo $project['Project']['acronym']; ?></td>
@@ -32,6 +35,7 @@
 
 			<div class="actions">
 				<td>
+									
 					<?php echo $this->Html->link(
 					$this->Html->image("view.png", array('alt' => 'Ver')), array('action' => 'view', $project['Project']['id']), array('escape'=>false, 'id'=>'link'))?>
 
@@ -43,7 +47,7 @@
 					$this->Html->image("delete.png", array('alt' => 'Remover')), array('action' => 'delete', $project['Project']['id']),
 					array('escape'=>false, 'id'=>'link'), "Confirmar exclusão do projeto ". $project['Project']['name'] . "?");
 					
-					echo $this->Session->flash();
+					
 					?></td>
 			</div>
 		</tr>
