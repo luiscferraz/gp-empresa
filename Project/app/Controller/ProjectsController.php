@@ -80,7 +80,19 @@ class ProjectsController extends AppController{
 	
 		if ($this->request->is('get')) {
 			$this->request->data = $this->Project->read();
-			$this-> set ('projects',$this->Project->find('all', array('conditions'=> array('Project.inactive !=' => 1, 'Project.id !=' => $id))));
+			$this-> set ('projects',$this->Project->find('all', array('conditions'=> array( 'OR' =>
+    array(
+        array(
+            array('Project.id !=' => $id),
+            array('Project.parent_project_id =' => Null),
+			array('Project.inactive !=' => 1)
+        ),
+        array(
+            array('Project.id !=' => $id),
+            array('Project.parent_project_id !=' => $id),
+			array('Project.inactive !=' => 1)
+        )
+    )))));
             $this-> set ('companies',$this->Project->Company->find('all', array('conditions'=> array('Company.removed !=' => 1))));
 		}
 		else {
